@@ -32,7 +32,9 @@ sqlalchemy
 validators==0.28.1
 youtube_transcript_api
 unstructured
+ddgs
 pytube
 numexpr
 huggingface_hub
+
 gradio
