@@ -6,7 +6,7 @@ from langchain.callbacks import StreamlitCallbackHandler
 import os 
 from dotenv import load_dotenv
 load_dotenv()
-##
+####
 from langchain_groq import ChatGroq
 # os.environ['GROQ_API_KEY'] = os.getenvx
 
@@ -50,5 +50,6 @@ if prompt:=st.chat_input(placeholder="What is machine learning?"):
         response=search_agent.run(st.session_state.messages,callbacks=[st_cb])
         st.session_state.messages.append({'role':'assistant',"content":response})
         st.write(response)
+
 
 
